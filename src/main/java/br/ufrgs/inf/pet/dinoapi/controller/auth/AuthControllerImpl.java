@@ -23,7 +23,7 @@ public class AuthControllerImpl implements AuthController {
     }
 
     @Override
-    @PostMapping("/public/auth/google/")
+    @PostMapping("/public/auth/google/teste")
     public ResponseEntity<?> googleAuthRequest(@Valid @RequestBody GoogleAuthRequestModel authRequestMode) {
         return googleAuthService.googleSignIn(authRequestMode);
     }
