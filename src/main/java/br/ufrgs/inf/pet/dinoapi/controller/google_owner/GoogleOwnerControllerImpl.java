@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class GoogleOwnerControllerImpl implements GoogleOwnerController {
 
     @Override
-    @GetMapping("google1da5cc70ff16112c.html")
+    @GetMapping("google51f841a66886c396.html")
     public ResponseEntity<String> get() {
-        return new ResponseEntity<>("google-site-verification: google1da5cc70ff16112c.html", HttpStatus.OK);
+        return new ResponseEntity<>("google-site-verification: google51f841a66886c396.html", HttpStatus.OK);
     }
 
 }

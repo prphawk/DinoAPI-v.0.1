@@ -42,7 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
                 .antMatchers("/public/**").permitAll()
-                .antMatchers("/google1da5cc70ff16112c.html").permitAll()
+                .antMatchers("/google51f841a66886c396.html").permitAll()
                 .anyRequest().authenticated()
                 .and().cors().and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
