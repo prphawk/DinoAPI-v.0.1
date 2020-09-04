@@ -24,7 +24,6 @@ public class GoogleAPICommunicationImpl implements GoogleAPICommunication {
 
             final ArrayList<String> scopes = new ArrayList<>();
 
-            scopes.add(GoogleScopesEnum.CALENDAR.getScope());
             scopes.add(GoogleScopesEnum.PROFILE.getScope());
 
             GoogleTokenResponse tokenResponse =
