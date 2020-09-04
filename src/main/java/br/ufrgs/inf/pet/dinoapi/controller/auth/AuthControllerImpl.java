@@ -34,8 +34,8 @@ public class AuthControllerImpl implements AuthController {
     public ResponseEntity<?> refreshAuth(@Valid @RequestBody AuthRefreshRequestModel authRefreshRequestModel) {
         return authService.refreshAuth(authRefreshRequestModel);
     }
-    
-    @GetMapping("/public/teste")
+
+    @PostMapping("/public/teste")
     public ResponseEntity<String> getTest() {
         return new ResponseEntity<>("teste", HttpStatus.OK);
     }
