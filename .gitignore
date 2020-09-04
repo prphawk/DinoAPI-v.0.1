@@ -16,7 +16,6 @@
 .idea/
 
 /local.properties
-system.properties
 
 /*.classpath
 /.classpath
@@ -26,8 +25,3 @@ system.properties
 /build
 
 target/
-
-#*.properties
-
-
-src/main/resources/
