@@ -35,11 +35,6 @@ public class AuthControllerImpl implements AuthController {
         return authService.refreshAuth(authRefreshRequestModel);
     }
 
-    @PostMapping("/public/teste")
-    public ResponseEntity<String> getTest() {
-        return new ResponseEntity<>("teste", HttpStatus.OK);
-    }
-
     @Override
     @GetMapping("/auth/google/")
     public ResponseEntity<?> googleRefreshAuth() {
