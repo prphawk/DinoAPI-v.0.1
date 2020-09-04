@@ -44,7 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/public/**").permitAll()
                 .antMatchers("/google51f841a66886c396.html").permitAll()
                 .anyRequest().authenticated()
-                .and().cors().and().csrf().disable()
+                .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         httpSecurity.addFilterBefore(this.authFilter, UsernamePasswordAuthenticationFilter.class);
     }
