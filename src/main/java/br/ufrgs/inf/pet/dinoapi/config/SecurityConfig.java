@@ -61,7 +61,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         configuration.setAllowedOrigins(Arrays.asList(
                 new AppOriginConfig().getOrigin()
         ));
-        configuration.setAllowedMethods(Arrays.asList("*"));
+        configuration.setAllowedMethods(Arrays.asList("POST", "GET", "PUT", "DELETE"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setExposedHeaders(Arrays.asList(
                 HeaderEnum.AUTHORIZATION.getValue()));
