@@ -22,18 +22,14 @@ public class GoogleAuth {
     @Column(name = "google_id", length = GOOGLE_ID_MAX, unique = true, nullable = false)
     private String googleId;
 
-    @Column(name = "refresh_token", length = REFRESH_TOKEN_MAX, unique = true, nullable = false)
-    private String refreshToken;
-
     @OneToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     public GoogleAuth() {}
 
-    public GoogleAuth(String googleId, String refreshToken, User user) {
+    public GoogleAuth(String googleId, User user) {
         this.googleId = googleId;
-        this.refreshToken = refreshToken;
         this.user = user;
     }
 
@@ -48,12 +44,6 @@ public class GoogleAuth {
     public void setGoogleId(String googleId) {
         this.googleId = googleId;
     }
-
-    public String getRefreshToken() {
-        return refreshToken;
-    }
-
-    public void setRefreshToken(String refreshToken) { this.refreshToken = refreshToken; }
 
     public User getUser() {
         return user;

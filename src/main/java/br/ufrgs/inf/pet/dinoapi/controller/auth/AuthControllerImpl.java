@@ -42,12 +42,6 @@ public class AuthControllerImpl implements AuthController {
     }
 
     @Override
-    @GetMapping("/auth/google/")
-    public ResponseEntity<?> googleRefreshAuth() {
-        return googleAuthService.googleRefreshAuth();
-    }
-
-    @Override
     @PutMapping("/auth/logout/")
     public ResponseEntity<?> logout() {
         return authService.logout();
