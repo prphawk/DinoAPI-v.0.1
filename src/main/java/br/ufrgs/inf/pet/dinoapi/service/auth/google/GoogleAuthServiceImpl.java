@@ -53,7 +53,7 @@ public class GoogleAuthServiceImpl implements GoogleAuthService {
 
                 GoogleAuth googleAuth = this.getGoogleAuthByGoogleId(googleId);
 
-                User user;
+                User user; 
 
                 if (googleAuth != null) {
                     user = this.updateUserData(payload);
